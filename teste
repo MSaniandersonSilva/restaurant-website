@@ -40,13 +40,11 @@ html {
     justify-content: space-between;
     position: fixed;
     /* box-sizing: border-box; */
-
 }
 
 .header a {
     font-family: var(--font-special);
     color: var(--color-font-white);
-    text-decoration: none;
 }
 
 .header .logo {
@@ -57,9 +55,6 @@ html {
 
 .header ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1px;
 }
 
 .header ul li {
@@ -69,20 +64,15 @@ html {
 }
 
 /* Borda no menu */
-.header ul li a {
-    /* padding: 5px; */
-    padding-bottom: 17px;
-}
+/* .header ul li a {
+    border-radius: 20px;
+    padding: 5px;
+} */
 
-.header a:hover{
-    color: var(--color-font-yellow);
-}
-
+.header a:hover,
 .header ul li a:hover {
-    border-bottom: 2px solid;
-    border-color: var(--color-font-yellow);
+    /* background: rgb(202, 197, 197); Borda  */
     color: var(--color-font-yellow);
-    transition: all 500ms;
 }
 
 /* First-Section */
@@ -150,17 +140,14 @@ html {
     margin-top: 2rem;
     width: 220px;
     height: 40px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     cursor: pointer;
-    text-transform: uppercase;
-    transition: all 200ms ease-in;
 }
 
 .btn button:hover {
     color: var(--color-font-yellow);
     background-color: transparent;
-    font-size: 1.2rem;
-    border-color: var(--color-font-yellow);
-    transition: 200ms;
+    font-size: 1.6rem;
+    transition: 1.2ms;
 }
 
