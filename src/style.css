@@ -4,7 +4,9 @@
 
 :root {
     --color-font-primary: rgb(255, 255, 255);
-    /* --color-font-secundary: rgb(255, 251, 1); */
+    --color-font-secundary: #35afdf;
+    --color-btn: #b8cbd3;
+    --color-bg-primary: #454449;
     --font-special: 'Cormorant', serif;
     --font-secundary: 'Young Serif', serif;
     --color-font-sections: #E9F1F7;
@@ -31,7 +33,8 @@ html {
 /* Menu */
 
 .header {
-    background-color: #1f1f1f;
+    background-color: #000000;
+    /* background-color: var(--color-bg-primary); */
     width: 100vw;
     height: auto;
     display: flex;
@@ -63,33 +66,30 @@ html {
     justify-content: center;
     align-items: center;
     margin-bottom: 1px;
+    text-transform: uppercase;
 }
 
 .header ul li {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 0 30px;
     font-weight: 600;
 }
 
 /* Borda no menu */
 .header ul li a {
-    /* padding: 5px; */
     padding-bottom: 17px;
 }
 
 .header a:hover{
     /* color: var(--color-font-secundary); */
     border-bottom: 2px solid;
-}
-
-.header ul li a:hover {
-    border-bottom: 2px solid;
+    color: var(--color-font-secundary);
 }
 
 /* First-Section */
 
 .first-section {
-    background-image: linear-gradient(rgba(2, 2, 1, 0.6), rgba(2, 2, 2, 0.6)),url("/images/bg-section1.jpeg");
+    background-image: linear-gradient(rgba(2, 2, 1, 0.6), rgba(2, 2, 2, 0.6)),url("/images/bg1.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,57 +97,50 @@ html {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .first-section .container1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+    margin-top: 80px;
 }
 
 .first-section .container1 h1 {
     color: var(--color-font-sections);
     font-size: 2.6rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
-    text-align: left;
-    margin-bottom: 1rem;
-    margin-left: 10rem;
-    padding: 0;
     
 }
 
 .first-section h3 {
+    margin: 10px;
     color: var(--color-font-section-secundary);
     font-size: 1.6rem;
-    font-weight: 200;
     display: flex;
-    margin-bottom: 7rem;
-    align-self: flex-end;
-
+    justify-content: center;
 }
 
-.btn button {
-    margin-left: 8rem;
-    margin-top: 2rem;
-    width: 220px;
+.container-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.container-btn button {
+    width: 200px;
     height: 40px;
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 100ms ease-in;
+    margin: 10px;
 }
 
-.btn button:hover {
-    color: var(--color-font-primary);
-    background-color: transparent;
+.container-btn button:hover {
+    background-color: black;
+    color: white;
     font-size: 1.2rem;
-    border-color: var(--color-font-primary);
     transition: 100ms;
     text-transform: uppercase;
+    border: none;
 }
-
