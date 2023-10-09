@@ -3,8 +3,8 @@
 /* ---------- */
 
 :root {
-    --color-font-white: rgb(255, 255, 255);
-    --color-font-yellow: rgb(255, 251, 1);
+    --color-font-primary: rgb(255, 255, 255);
+    /* --color-font-secundary: rgb(255, 251, 1); */
     --font-special: 'Cormorant', serif;
     --font-secundary: 'Young Serif', serif;
     --color-font-sections: #E9F1F7;
@@ -31,21 +31,22 @@ html {
 /* Menu */
 
 .header {
-    background-color: #000000;
+    background-color: #1f1f1f;
     width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 13px;
     justify-content: space-between;
     position: fixed;
+    
     /* box-sizing: border-box; */
 
 }
 
 .header a {
     font-family: var(--font-special);
-    color: var(--color-font-white);
+    color: var(--color-font-primary);
     text-decoration: none;
 }
 
@@ -53,6 +54,8 @@ html {
     font-size: 2.6em;
     font-weight: bold;
     margin-left: 20px;
+    margin-bottom: -9px;
+    padding-bottom: 10px;
 }
 
 .header ul {
@@ -75,14 +78,12 @@ html {
 }
 
 .header a:hover{
-    color: var(--color-font-yellow);
+    /* color: var(--color-font-secundary); */
+    border-bottom: 2px solid;
 }
 
 .header ul li a:hover {
     border-bottom: 2px solid;
-    border-color: var(--color-font-yellow);
-    color: var(--color-font-yellow);
-    transition: all 500ms;
 }
 
 /* First-Section */
@@ -131,36 +132,22 @@ html {
 
 }
 
-.first-section h3 span {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.first-section h3 span.efeito-last {
-    color: var(--color-font-yellow);
-    margin-right: 0;
-}
-
-.efeito {
-    color: var(--color-font-yellow);
-}
-
 .btn button {
     margin-left: 8rem;
     margin-top: 2rem;
     width: 220px;
     height: 40px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     cursor: pointer;
-    text-transform: uppercase;
-    transition: all 200ms ease-in;
+    transition: all 100ms ease-in;
 }
 
 .btn button:hover {
-    color: var(--color-font-yellow);
+    color: var(--color-font-primary);
     background-color: transparent;
     font-size: 1.2rem;
-    border-color: var(--color-font-yellow);
-    transition: 200ms;
+    border-color: var(--color-font-primary);
+    transition: 100ms;
+    text-transform: uppercase;
 }
 
