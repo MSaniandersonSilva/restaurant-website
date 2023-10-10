@@ -36,7 +36,7 @@ html {
     background-color: #000000;
     /* background-color: var(--color-bg-primary); */
     width: 100vw;
-    height: auto;
+    height: 7em;
     display: flex;
     align-items: center;
     padding: 13px;
@@ -144,3 +144,108 @@ html {
     text-transform: uppercase;
     border: none;
 }
+
+
+
+/* Second-Section */
+
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.second-section .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 15em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
+.second-section h1 {
+    margin-bottom: .6em;
+}
+
+.second-section p {
+    font-size: 1.4em;
+    font-weight: 700;
+    width: 80rem;
+    text-align: center;
+}
+
+.container-info {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10em;
+}
+
+.container-text {
+    width: 25vw;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    background-color: rgb(242, 243, 245);
+    transition: .60s;
+}
+
+.container-text:hover {
+    background-color: #d9dbdb;
+}
+
+.container-text h2 {
+    width: 5em;
+    margin-bottom: .3em;
+    margin-right: 6.3em;
+    font-weight: bold;
+    font-family: var(--font-special);
+    font-size: 3em;
+}
+
+.container-text p {
+    width: 24em;
+    margin-top: 1.3em;
+    text-align: start;
+    margin-left: 3.8em;
+    margin-right: 4em;
+
+    font-weight: 200;
+}
+
+.container-text p:nth-child(3) {
+    font-weight: 200;
+    margin-bottom: 1.3em;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.container-img .img2 {
+    width: 10vw;
+    height: 40vh;
+}
+
+.container-img .img3 {
+    width: 10vw;
+    height: 40vh;
+    border-radius: 0 15px 15px 0;
+}
+
